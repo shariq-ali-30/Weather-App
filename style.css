@@ -55,11 +55,6 @@ header h1 {
     font-size: 16px;
     transition: scale 0.1s;
 }
-
-.search button:hover {
-    scale: 1.1;
-}
-
 .search button:active {
     scale: 0.99;
 }
@@ -229,6 +224,10 @@ header h1 {
         width: 90%;
         margin-right: 8px;
     }
+
+    .search button:hover {
+        scale: 1.1;
+}
 
     .weather-details {
         margin: 0;
