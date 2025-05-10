@@ -146,9 +146,8 @@ header h1 {
 
 .weather-details .temp .description {
     font-size: 20px;
-    margin-top: -20px;
+    margin-top: -25px;
     margin-bottom: 20px;
-    text-transform: capitalize;
 }
 
 .weather-details .temp h1 {
