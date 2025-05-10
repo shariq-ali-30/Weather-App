@@ -67,7 +67,7 @@ async function getWeather(cityName) {
 
 search.addEventListener('submit', (event) => {
   event.preventDefault();
-  let cityName = document.querySelector('.search input').value;
+  let cityName = document.querySelector('.search input').value.trim();
 
 
   if (cityName === '') {
