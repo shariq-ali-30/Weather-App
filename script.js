@@ -25,31 +25,31 @@ async function getWeather(cityName) {
   document.querySelector('.wind').innerText = data.wind.speed + ' km/h';
 
   if (data.weather[0].main === 'Clear') {
-    weatherIcon.src = 'images/clear.png';
+    weatherIcon.src = 'clear.png';
     description.innerText = 'Sunny';
   } else if (data.weather[0].main === 'Clouds') {
-    weatherIcon.src = 'images/clouds.png';
+    weatherIcon.src = 'clouds.png';
     description.innerText = 'Cloudy';
   } else if (data.weather[0].main === 'Few clouds') {
-    weatherIcon.src = 'images/few-clouds.png';
+    weatherIcon.src = 'few-clouds.png';
     description.innerText = 'Partly cloudy';
   } else if (data.weather[0].main === 'Scattered clouds') {
-    weatherIcon.src = 'images/broken-clouds.png';
+    weatherIcon.src = 'broken-clouds.png';
     description.innerText = 'Partly cloudy';
   } else if (data.weather[0].main === 'Broken clouds') {
-    weatherIcon.src = 'images/broken-clouds.png';
+    weatherIcon.src = 'broken-clouds.png';
     description.innerText = 'Partly cloudy';
   } else if (data.weather[0].main === 'Drizzle') {
-    weatherIcon.src = 'images/drizzle.png';
+    weatherIcon.src = 'drizzle.png';
     description.innerText = 'Drizzle';
   } else if (data.weather[0].main === 'Rain') {
-    weatherIcon.src = 'images/rain.png';
+    weatherIcon.src = 'rain.png';
     description.innerText = 'Rain';
   } else if (data.weather[0].main === 'Thunderstorm') {
-    weatherIcon.src = 'images/thunder.png';
+    weatherIcon.src = 'thunder.png';
     description.innerText = 'Thunderstorm';
   } else if (data.weather[0].main === 'Snow') {
-    weatherIcon.src = 'images/snow.png';
+    weatherIcon.src = 'snow.png';
     description.innerText = 'Snow';
   } else if (
     data.weather[0].main === 'Mist' ||
@@ -57,10 +57,10 @@ async function getWeather(cityName) {
     data.weather[0].main === 'Haze' ||
     data.weather[0].main === 'Fog'
   ) {
-    weatherIcon.src = 'images/clouds.png';
+    weatherIcon.src = 'clouds.png';
     description.innerText = 'Fog';
   } else {
-    weatherIcon.src = 'images/clear.png';
+    weatherIcon.src = 'clear.png';
     description.innerText = 'Sunny';
   }
 }
