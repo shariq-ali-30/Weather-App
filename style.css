@@ -148,7 +148,7 @@ body {
 }
 
 .col {
-    position: absolute;
+    position: relative;
     bottom: 40px;
     display: flex;
     justify-content: space-between;
@@ -218,7 +218,7 @@ body {
     }
 
     .col {
-        position: relative;
+        position: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
