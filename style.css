@@ -44,13 +44,16 @@ header h1 {
 }
 
 .search button {
+    position: absolute;
+    left: 10px;
     background-color: #fff;
     color: #4a90e2;
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    height: 42px;
+    width: 42px;
     font-size: 16px;
-    z-index: 1;
 }
 
 .error-message {
@@ -119,15 +122,6 @@ header h1 {
     text-align: center;
     margin: 20px auto;
     animation: fadeIn 0.4s ease-in-out;
-}
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }
 
 .weather-details .temp {
