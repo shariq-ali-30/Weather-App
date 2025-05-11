@@ -49,6 +49,7 @@ body {
 .error-message {
     color: rgb(197, 0, 0);
     font-weight: 400;
+    width: 90%
     font-size: 14px;
     margin-top: 10px;
     margin-left: 40px;
