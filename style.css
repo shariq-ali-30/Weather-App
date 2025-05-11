@@ -6,7 +6,7 @@
 }
 
 body {
-    height: 100svh;
+    height: 100vh;
     background: linear-gradient(45deg, #0077FF, #66DFFF);
     color: white;
     overflow: hidden;
@@ -149,7 +149,7 @@ body {
 
 .col {
     position: relative;
-    bottom: 40px;
+    bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,7 +218,7 @@ body {
     }
 
     .col {
-        position: none;
+        bottom: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
