@@ -148,8 +148,6 @@ body {
 }
 
 .col {
-    position: relative;
-    bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -218,7 +216,6 @@ body {
     }
 
     .col {
-        bottom: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
