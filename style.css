@@ -26,6 +26,7 @@ header h1 {
 }
 
 .search {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
