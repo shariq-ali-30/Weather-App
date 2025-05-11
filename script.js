@@ -78,7 +78,7 @@ async function getWeather(cityName) {
     }, 3000);
 
   } catch (error) {
-    errorMessage.innerText = 'Unable to fetch data. Please check your connection.';
+    errorMessage.innerText = 'Unable to fetch data. Please check your internet connection.';
     errorMessage.style.display = 'block';
     searchInput.style.border = '1.5px solid red';
     weatherDetails.style.display = 'none';
