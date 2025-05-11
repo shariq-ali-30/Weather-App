@@ -17,8 +17,6 @@ async function getWeather(cityName) {
     document.querySelector('.search input').style.border = '1.5px solid red';
     document.querySelector('.weather-details').style.display = 'none';
 
-document.querySelector('.search input').value = 'cityName'
-
 return;
   }
 
