@@ -81,10 +81,11 @@ search.addEventListener('submit', (event) => {
     return;
   } else {
     setTimeout(() => {
-      getWeather(cityName);
       document.querySelector('.weather-details').style.display = 'block';
       document.querySelector('.loading-text').style.display = 'none';
     }, 3000);
+
+    getWeather(cityName);
 
     errorMessage.style.display = 'none';
     document.querySelector('.search input').style.border = 'none';
