@@ -62,7 +62,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     color: #fff;
-    top: 35vh;
+    top: 50%;
     left: 80px;
     display: none;
     animation: fadeIn 0.3s ease-in-out;
