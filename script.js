@@ -80,7 +80,6 @@ search.addEventListener('submit', (event) => {
     searchInput.style.border = '1.5px solid red';
     weatherDetails.style.display = 'none';
     loadingText.style.display = 'none';
-    clearTimeout();
     return;
   } else {
     setTimeout(() => {
