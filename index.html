@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="card">
+        <section>
+            <form class="search">
+                <input id="cityInput" type="text" spellcheck="false" placeholder="Enter city name">
+                <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="error-message">City not found!</div>
+            <p class="loading-text">Checking Weather<span class="dots"></span></p>
+
+            <div class="weather-details">
+                <div class="temp">
+                    <img id="weatherIcon" src="clear.png">
+                    <p class="description">Sunny</p>
+                    <h1>0°C</h1>
+                    <h2>City</h2=>
+                </div>
+
+                <div class="weather">
+                    <div class="col">
+                        <img src="humidity.png">
+                        <div>
+                            <h3 class="humidity">0%</h3>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="wind.png">
+                        <div>
+                            <h3 class="wind">0 km/h</h3>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
