@@ -16,7 +16,10 @@ async function getWeather(cityName) {
     errorMessage.style.display = 'block';
     document.querySelector('.search input').style.border = '1.5px solid red';
     document.querySelector('.weather-details').style.display = 'none';
-    return;
+
+document.querySelector('.search input').value = 'cityName'
+
+return;
   }
 
   document.querySelector('.temp h1').innerText = Math.round(data.main.temp) + '°C';
@@ -83,11 +86,14 @@ search.addEventListener('submit', (event) => {
       getWeather(cityName);
       document.querySelector('.weather-details').style.display = 'block';
       document.querySelector('.loading-text').style.display = 'none';
+
+document.querySelector('.search input').value = "";
     }, 3000);
 
     errorMessage.style.display = 'none';
     document.querySelector('.search input').style.border = 'none';
     document.querySelector('.loading-text').style.display = 'block';
     document.querySelector('.weather-details').style.display = 'none';
+
   }
 });
