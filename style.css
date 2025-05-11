@@ -215,12 +215,7 @@ header h1 {
 
     .search input[type="text"] {
         width: 90%;
-        margin-right: 8px;
     }
-
-    .search button:hover {
-        scale: 1.1;
-}
 
     .weather-details {
         margin: 0;
