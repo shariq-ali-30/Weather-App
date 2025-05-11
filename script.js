@@ -86,8 +86,6 @@ search.addEventListener('submit', (event) => {
       getWeather(cityName);
       document.querySelector('.weather-details').style.display = 'block';
       document.querySelector('.loading-text').style.display = 'none';
-
-document.querySelector('.search input').value = "";
     }, 3000);
 
     errorMessage.style.display = 'none';
@@ -95,5 +93,6 @@ document.querySelector('.search input').value = "";
     document.querySelector('.loading-text').style.display = 'block';
     document.querySelector('.weather-details').style.display = 'none';
 
+document.querySelector('.search input').blur();
   }
 });
