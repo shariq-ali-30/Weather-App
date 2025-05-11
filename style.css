@@ -47,7 +47,7 @@ header h1 {
 .search button {
     position: absolute;
     right: 10px;
-    background: #fff;
+    background: transparent;
     color: #4a90e2;
     border: none;
     border-radius: 50%;
