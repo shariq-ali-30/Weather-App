@@ -19,6 +19,7 @@ async function getWeather(cityName) {
   errorMessage.innerText = data.error.message || 'City not found. Please try again.';
   errorMessage.style.display = 'block';
   searchInput.style.border = '1.5px solid red';
+    searchInput.focus();
   weatherDetails.style.display = 'none';
   loader.style.display = 'none';
   return;
@@ -41,6 +42,7 @@ weatherIcon.src = "https:" + data.current.condition.icon;
     errorMessage.innerText = 'Unable to fetch data. Please check your internet connection.';
     errorMessage.style.display = 'block';
     searchInput.style.border = '1.5px solid red';
+    searchInput.focus();
     weatherDetails.style.display = 'none';
     loader.style.display = 'none';
     console.error('Fetch error:', error);
@@ -55,6 +57,7 @@ search.addEventListener('submit', (event) => {
     errorMessage.innerText = 'Please enter a city name.';
     errorMessage.style.display = 'block';
     searchInput.style.border = '1.5px solid red';
+    searchInput.focus();
     weatherDetails.style.display = 'none';
     loader.style.display = 'none';
     return;
