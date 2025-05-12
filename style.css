@@ -50,7 +50,7 @@ body {
     color: rgb(197, 0, 0);
     font-weight: 400;
     width: 90%
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 10px;
     margin-left: 40px;
     text-align: left;
@@ -59,10 +59,10 @@ body {
 
 .loading-text {
     position: absolute;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     color: #fff;
-    top: 50%;
+    top: 46%;
     left: 80px;
     display: none;
     animation: fadeIn 0.3s ease-in-out;
