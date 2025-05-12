@@ -122,12 +122,12 @@ body {
 }
 
 .weather-details .temp #weatherIcon {
-    width: 200px;
+    width: 220px;
 }
 
 .weather-details .temp .description {
     font-size: 20px;
-    margin-top: -10px;
+    margin-top: -15px;
     margin-bottom: 20px;
 }
 
