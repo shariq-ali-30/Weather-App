@@ -35,7 +35,7 @@ weatherIcon.src = "https:" + data.current.condition.icon;
     setTimeout(() => {
       weatherDetails.style.display = 'block';
       loadingText.style.display = 'none';
-    }, 3000);
+    }, 1500);
 
   } catch (error) {
     errorMessage.innerText = 'Unable to fetch data. Please check your internet connection.';
