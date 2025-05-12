@@ -29,47 +29,42 @@ document.querySelector('.temp h2').innerText = data.location.name;
 document.querySelector('.humidity').innerText = data.current.humidity + '%';
 document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
-    let weatherMain = data.weather[0].main.toLowerCase();
-    let weatherDesc = data.weather[0].description.toLowerCase();
+    let weatherText = data.current.condition.text.toLowerCase();
+let weatherIconUrl = "https:" + data.current.condition.icon;
 
-    if (weatherMain === 'clear') {
-      weatherIcon.src = 'clear.png';
-      description.innerText = 'Sunny';
-    } else if (weatherMain === 'clouds') {
-      if (weatherDesc.includes('few')) {
-        weatherIcon.src = 'few-clouds.png';
-        description.innerText = 'Partly cloudy';
-      } else if (weatherDesc.includes('scattered') || weatherDesc.includes('broken')) {
-        weatherIcon.src = 'broken-clouds.png';
-        description.innerText = 'Partly cloudy';
-      } else {
-        weatherIcon.src = 'clouds.png';
-        description.innerText = 'Cloudy';
-      }
-    } else if (weatherMain === 'drizzle') {
-      weatherIcon.src = 'drizzle.png';
-      description.innerText = 'Drizzle';
-    } else if (weatherMain === 'rain') {
-      weatherIcon.src = 'rain.png';
-      description.innerText = 'Rain';
-    } else if (weatherMain === 'thunderstorm') {
-      weatherIcon.src = 'thunder.png';
-      description.innerText = 'Thunderstorm';
-    } else if (weatherMain === 'snow') {
-      weatherIcon.src = 'snow.png';
-      description.innerText = 'Snow';
-    } else if (
-      weatherMain === 'mist' ||
-      weatherMain === 'smoke' ||
-      weatherMain === 'haze' ||
-      weatherMain === 'fog'
-    ) {
-      weatherIcon.src = 'clouds.png';
-      description.innerText = 'Fog';
-    } else {
-      weatherIcon.src = 'clear.png';
-      description.innerText = 'Sunny';
-    }
+weatherIcon.src = 'clear.png';
+description.innerText = 'Sunny';
+
+if (weatherText.includes('sunny') || weatherText.includes('clear')) {
+  weatherIcon.src = 'clear.png';
+  description.innerText = 'Sunny';
+} else if (weatherText.includes('partly') || weatherText.includes('cloudy')) {
+  weatherIcon.src = 'clouds.png';
+  description.innerText = 'Partly Cloudy';
+} else if (weatherText.includes('overcast')) {
+  weatherIcon.src = 'clouds.png';
+  description.innerText = 'Cloudy';
+} else if (weatherText.includes('drizzle')) {
+  weatherIcon.src = 'drizzle.png';
+  description.innerText = 'Drizzle';
+} else if (weatherText.includes('rain')) {
+  weatherIcon.src = 'rain.png';
+  description.innerText = 'Rain';
+} else if (weatherText.includes('thunder')) {
+  weatherIcon.src = 'thunder.png';
+  description.innerText = 'Thunderstorm';
+} else if (weatherText.includes('snow')) {
+  weatherIcon.src = 'snow.png';
+  description.innerText = 'Snow';
+} else if (
+  weatherText.includes('mist') ||
+  weatherText.includes('smoke') ||
+  weatherText.includes('haze') ||
+  weatherText.includes('fog')
+) {
+  weatherIcon.src = 'clouds.png';
+  description.innerText = 'Fog';
+}
 
     setTimeout(() => {
       weatherDetails.style.display = 'block';
