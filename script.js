@@ -6,7 +6,7 @@ let errorMessage = document.querySelector('.error-message');
 let description = document.querySelector('.description');
 let weatherDetails = document.querySelector('.weather-details');
 let searchInput = document.querySelector('.search input');
-let loadingText = document.querySelector('.loading-text');
+let loader = document.querySelector('.loader');
 
 async function getWeather(cityName) {
   const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}`;
@@ -20,7 +20,7 @@ async function getWeather(cityName) {
   errorMessage.style.display = 'block';
   searchInput.style.border = '1.5px solid red';
   weatherDetails.style.display = 'none';
-  loadingText.style.display = 'none';
+  loader.style.display = 'none';
   return;
 }
 
@@ -42,7 +42,7 @@ weatherIcon.src = "https:" + data.current.condition.icon;
     errorMessage.style.display = 'block';
     searchInput.style.border = '1.5px solid red';
     weatherDetails.style.display = 'none';
-    loadingText.style.display = 'none';
+    loader.style.display = 'none';
     console.error('Fetch error:', error);
   }
 }
@@ -56,13 +56,13 @@ search.addEventListener('submit', (event) => {
     errorMessage.style.display = 'block';
     searchInput.style.border = '1.5px solid red';
     weatherDetails.style.display = 'none';
-    loadingText.style.display = 'none';
+    loader.style.display = 'none';
     return;
   } else {
     errorMessage.style.display = 'none';
     searchInput.style.border = 'none';
     weatherDetails.style.display = 'none';
-    loadingText.style.display = 'block';
+    loader.style.display = 'block';
     getWeather(cityName);
     searchInput.blur();
   }
