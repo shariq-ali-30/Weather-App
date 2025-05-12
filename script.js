@@ -1,5 +1,4 @@
-let apiKey = 'b4337d0fa325bbae2f444eca1409998b';
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?&units=metric`;
+let apiKey = 'ad892631403849b0a2191654251205';
 
 let search = document.querySelector('.search');
 let weatherIcon = document.getElementById('weatherIcon');
@@ -10,7 +9,7 @@ let searchInput = document.querySelector('.search input');
 let loadingText = document.querySelector('.loading-text');
 
 async function getWeather(cityName) {
-  const url = apiUrl + '&q=' + cityName + '&appid=' + apiKey;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${cityName}`;
 
   try {
     let response = await fetch(url);
