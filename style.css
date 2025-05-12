@@ -61,7 +61,7 @@ body {
 .loader {
   width: 2rem;
   height: 2rem;
-  position: relative;
+  position: absolute;
   top: 46%;
   left: 200px;
   display: none;
