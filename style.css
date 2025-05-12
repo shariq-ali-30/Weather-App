@@ -98,12 +98,11 @@ body {
 
 @keyframes spin {
   0%, 100% {
-    scale: 1;
-    transom: rotate(0deg);
-}
+    transform: rotate(0deg) scale(1);
+  }
   50% {
-    scale: 1.1;
-    transom: rotate(360deg);
+    transform: rotate(360deg) scale(1.1);
+  }
 }
 
 @keyframes fadeIn {
