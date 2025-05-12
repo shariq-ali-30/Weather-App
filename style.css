@@ -63,7 +63,7 @@ body {
   height: 2rem;
   position: absolute;
   top: 46%;
-  left: 200px;
+  left: 180px;
   display: none;
   animation: spin 2s linear infinite, fadeIn 0.5s ease;
 }
