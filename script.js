@@ -24,10 +24,10 @@ async function getWeather(cityName) {
   return;
 }
 
-    document.querySelector('.temp h1').innerText = Math.round(data.main.temp) + '°C';
-    document.querySelector('.temp h2').innerText = data.name;
-    document.querySelector('.humidity').innerText = data.main.humidity + '%';
-    document.querySelector('.wind').innerText = data.wind.speed + ' km/h';
+    document.querySelector('.temp h1').innerText = Math.round(data.current.temp_c) + '°C';
+document.querySelector('.temp h2').innerText = data.location.name;
+document.querySelector('.humidity').innerText = data.current.humidity + '%';
+document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
     let weatherMain = data.weather[0].main.toLowerCase();
     let weatherDesc = data.weather[0].description.toLowerCase();
