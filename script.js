@@ -35,7 +35,7 @@ weatherIcon.src = "https:" + data.current.condition.icon;
 
     setTimeout(() => {
       weatherDetails.style.display = 'block';
-      loadingText.style.display = 'none';
+      loader.style.display = 'none';
     }, 1500);
 
   } catch (error) {
