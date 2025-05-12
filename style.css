@@ -63,8 +63,8 @@ body {
   height: 2rem;
   position: relative;
   top: 46%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 200px;
+  display: none;
   animation: spin 2s linear infinite, fadeIn 0.5s ease;
 }
 
@@ -217,10 +217,10 @@ body {
         font-size: 14px;
     }
 
-    .loading-text {
+    .loader {
         position: absolute;
         top: 50%;
-        left: 100px;
+        left: 200px;
     }
     
     .search {
