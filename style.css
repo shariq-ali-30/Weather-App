@@ -59,10 +59,10 @@ body {
 
 .loading-text {
     position: absolute;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     color: #fff;
-    top: 46%;
+    top: 48%;
     left: 80px;
     display: none;
     animation: fadeIn 0.3s ease-in-out;
