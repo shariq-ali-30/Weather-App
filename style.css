@@ -50,7 +50,7 @@ body {
     color: rgb(197, 0, 0);
     font-weight: 400;
     width: 90%
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 10px;
     margin-left: 40px;
     text-align: left;
@@ -190,6 +190,10 @@ body {
         padding: 20px;
         width: 400px;
         height: 550px;
+    }
+
+    .error-message {
+        font-size: 14px;
     }
 
     .loading-text {
