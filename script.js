@@ -15,14 +15,14 @@ async function getWeather(cityName) {
     let response = await fetch(url);
     let data = await response.json();
 
-    if (data.cod == '404') {
-      errorMessage.innerText = 'City not found. Please try again.';
-      errorMessage.style.display = 'block';
-      searchInput.style.border = '1.5px solid red';
-      weatherDetails.style.display = 'none';
-      loadingText.style.display = 'none';
-      return;
-    }
+    if (data.error) {
+  errorMessage.innerText = data.error.message || 'City not found. Please try again.';
+  errorMessage.style.display = 'block';
+  searchInput.style.border = '1.5px solid red';
+  weatherDetails.style.display = 'none';
+  loadingText.style.display = 'none';
+  return;
+}
 
     document.querySelector('.temp h1').innerText = Math.round(data.main.temp) + '°C';
     document.querySelector('.temp h2').innerText = data.name;
