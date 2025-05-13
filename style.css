@@ -70,8 +70,8 @@ body {
 
 .loader .circle {
   background: #fff;
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.6rem;
+  height: 0.6rem;
   border-radius: 50%;
   position: absolute;
 }
@@ -207,7 +207,7 @@ body {
     .loader {
         position: absolute;
         top: 50%;
-        left: 160px;
+        left: 140px;
     }
     
     .search {
