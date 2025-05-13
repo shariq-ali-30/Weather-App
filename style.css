@@ -58,8 +58,8 @@ body {
 }
 
 .loader {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   display: none;
   position: absolute;
@@ -187,8 +187,8 @@ body {
 
     .loader {
         position: absolute;
-        top: 50%;
-        left: 170px;
+        top: 52%;
+        left: 180px;
     }
     
     .search {
