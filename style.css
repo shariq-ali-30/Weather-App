@@ -65,7 +65,7 @@ body {
   top: 48%;
   left: 160px;
   display: none;
-  animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite, fadeIn 0.5s ease;
 }
 
 .loader .circle {
