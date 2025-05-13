@@ -62,9 +62,9 @@ body {
   height: 16px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto;
   position: absolute;
   top: 48%;
+  left: 170px;
   background: #FFF;
   box-shadow: -24px 0 #FFF, 24px 0 #FFF;
   box-sizing: border-box;
