@@ -111,6 +111,7 @@ body {
 
 .weather-details .temp #weatherIcon {
     width: 200px;
+    margin-top: -20px;
 }
 
 .weather-details .temp .description {
