@@ -64,6 +64,7 @@ body {
   position: absolute;
   top: 48%;
   left: 160px;
+  display: none;
   animation: spin 2s linear infinite;
 }
 
