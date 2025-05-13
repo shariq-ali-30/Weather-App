@@ -59,6 +59,8 @@ body {
 
 .loader {
   position: relative;
+  top: 50%;
+  left: 170px;
   width: 120px;
   height: 100px;
 }
