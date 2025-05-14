@@ -37,7 +37,7 @@ body {
     position: absolute;
     right: 6px;
     background: transparent;
-    color: #1783ff;
+    color: #0f2027;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -48,7 +48,7 @@ body {
 }
 
 .error-message {
-    color: red;
+    color: rgb(197, 0, 0);
     font-weight: 400;
     width: 80%;
     font-size: 14px;
