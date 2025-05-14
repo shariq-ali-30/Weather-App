@@ -7,9 +7,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(45deg, #
-bdc3c7, 
-#2c3e50);
+    background: linear-gradient(45deg, #bdc3c7, #2c3e50);
     color: white;
     overflow: hidden;
 }
@@ -207,9 +205,7 @@ bdc3c7,
 
     .card {
         position: relative;
-        background: linear-gradient(45deg, #
-bdc3c7, 
-#2c3e50);
+        background: linear-gradient(45deg, #bdc3c7, #2c3e50);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         margin: 0 auto;
