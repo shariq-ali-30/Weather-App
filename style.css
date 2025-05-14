@@ -48,7 +48,7 @@ body {
 }
 
 .error-message {
-    color: rgb(197, 0, 0);
+    color: red;
     font-weight: 400;
     width: 80%;
     font-size: 14px;
