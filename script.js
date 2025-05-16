@@ -31,6 +31,8 @@ document.querySelector('.humidity').innerText = data.current.humidity + '%';
 document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
     const iconMap = {
+  "1-Sunny": "clear_day.png",
+  "0-Sunny": "clear_day.png",
   "1-Clear": "clear_day.png",
   "0-Clear": "clear_night.png",
   "1-Partly cloudy": "partly_cloudy_day.png",
