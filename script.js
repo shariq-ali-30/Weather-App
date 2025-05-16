@@ -30,9 +30,36 @@ document.querySelector('.temp h2').innerText = data.location.name + ', ' + data.
 document.querySelector('.humidity').innerText = data.current.humidity + '%';
 document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
-    description.innerText = data.current.condition.text;
-weatherIcon.src = "https:" + data.current.condition.icon;
+    const iconMap = {
+  "1-Clear": "clear_day.png",
+  "0-Clear": "clear_night.png",
+  "1-Partly cloudy": "partly_cloudy_day.png",
+  "0-Partly cloudy": "partly_cloudy_night.png",
+  "1-Rain": "rain.png",
+  "0-Rain": "rain.png",
+  "1-Patchy rain possible": "patchy_rain_possible_day.png",
+  "0-Patchy rain possible": "patchy_rain_possible_night.png",
+  "1-Fog": "fog.png",
+  "0-Fog": "fog.png",
+  "1-Mist": "mist.png",
+  "0-Mist": "mist.png",
+  "1-Overcast": "overcast.png",
+  "0-Overcast": "overcast.png",
+  "1-Thunder": "thunder_day.png",
+  "0-Thunder": "thunder_night.png",
+  "1-Snow_rain": "snow_rain_day.png",
+  "0-Snow_rain": "snow_rain_night.png",
+  "1-Snow": "snow_day.png",
+  "0-Snow": "snow_night.png",
+  "1-Cloudy": "cloudy_day.png",
+  "0-Cloudy": "cloudy_night.png"
+};
 
+function getWeatherIcon(data) {
+  const key = `${data.current.is_day}-${data.current.condition.text}`;
+  return iconMap[key] || "https:" + data.current.condition.icon;
+}
+getWeatherIcon(data)
     setTimeout(() => {
       weatherDetails.style.display = 'block';
       loader.style.display = 'none';
