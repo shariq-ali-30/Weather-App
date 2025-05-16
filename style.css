@@ -37,7 +37,7 @@ body {
     position: absolute;
     right: 6px;
     background: transparent;
-    color: #009DFF;
+    color: rgba(0, 94, 255, 1);
     border: none;
     border-radius: 50%;
     cursor: pointer;
