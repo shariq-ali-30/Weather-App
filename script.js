@@ -59,7 +59,10 @@ function getWeatherIcon(data) {
   const key = `${data.current.is_day}-${data.current.condition.text}`;
   return iconMap[key] || "https:" + data.current.condition.icon;
 }
-getWeatherIcon(data)
+
+weatherIcon.src = getWeatherIcon(data);
+description.innerText = data.current.condition.text;
+
     setTimeout(() => {
       weatherDetails.style.display = 'block';
       loader.style.display = 'none';
