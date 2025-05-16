@@ -32,7 +32,7 @@ document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
     const iconMap = {
   "1-Sunny": "clear_day.png",
-  "0-Sunny": "clear_day.png",
+  "0-Sunny": "clear_night.png",
   "1-Clear": "clear_day.png",
   "0-Clear": "clear_night.png",
   "1-Partly cloudy": "partly_cloudy_day.png",
@@ -54,7 +54,19 @@ document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
   "1-Snow": "snow_day.png",
   "0-Snow": "snow_night.png",
   "1-Cloudy": "cloudy_day.png",
-  "0-Cloudy": "cloudy_night.png"
+  "0-Cloudy": "cloudy_night.png",
+  "1-Patchy snow possible": "patchy_snow_possible_day.png",
+  "0-Patchy snow possible": "patchy_snow_possible_night.png",
+  "1-Light rain": "light_rain.png",
+  "0-Light rain": "light_rain.png",
+  "1-Heavy rain": "heavy_rain.png",
+  "0-Heavy rain": "heavy_rain.png",
+  "1-Light snow": "light_snow_day.png",
+  "0-Light snow": "light_snow_night.png",
+  "1-Blizzard": "blizzard.png",
+  "0-Blizzard": "blizzard.png",
+  "1-Freezing fog": "freezing_fog.png",
+  "0-Freezing fog": "freezing_fog.png"
 };
 
 function getWeatherIcon(data) {
