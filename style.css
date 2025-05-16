@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(45deg, rgba(0, 94, 255, 1) 0%, rgba(0, 157, 255, 1) 57%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(45deg, #005EFF 0%, #009DFF 57%, #00D4FF 100%);
     color: white;
     overflow: hidden;
 }
@@ -205,7 +205,7 @@ body {
 
     .card {
         position: relative;
-        background: linear-gradient(45deg, rgba(0, 94, 255, 1) 0%, rgba(0, 157, 255, 1) 57%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(45deg, #005EFF 0%, #009DFF 57%, #00D4FF 100%);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         border-radius: 20px;
         margin: 0 auto;
