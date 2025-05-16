@@ -235,6 +235,7 @@ body {
 
     .weather-details .temp #weatherIcon {
         margin-top: 0px;
+        width: 180px;
 }
 
     .weather {
