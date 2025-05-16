@@ -49,6 +49,10 @@ document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
   "0-overcast": "overcast.png",
   "1-thundery outbreaks possible": "thundery_outbreaks_possible_day.png",
   "0-thundery outbreaks possible": "thundery_outbreaks_possible_night.png",
+  "1-thundery outbreaks in nearby":
+"thundery_outbreaks_possible_day.png",
+  "0-thundery outbreaks in nearby":
+"thundery_outbreaks_possible_night.png",
   "1-snow_rain": "snow_rain_day.png",
   "0-snow_rain": "snow_rain_night.png",
   "1-snow": "snow_day.png",
