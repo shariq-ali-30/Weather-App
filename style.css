@@ -59,40 +59,60 @@ body {
 }
 
 .loader {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 100px;
-  gap: 0.5rem;
+  display: none;
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  margin: 100px auto;
+  animation: rotate 2s linear infinite;
 }
 
 .dot {
   width: 0.9rem;
   height: 0.9rem;
-  background-color: #ff4757;
+  background: white;
   border-radius: 50%;
-  animation: jump 1s ease-in-out infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.2s ease-in-out infinite;
 }
 
 .dot:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(0deg) translateX(1.5rem);
   animation-delay: 0s;
 }
 .dot:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(90deg) translateX(1.5rem);
   animation-delay: 0.15s;
 }
 .dot:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(180deg) translateX(1.5rem);
   animation-delay: 0.3s;
 }
 .dot:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(270deg) translateX(1.5rem);
   animation-delay: 0.45s;
 }
 
-@keyframes jump {
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
   0%, 100% {
-    transform: translateY(0);
+    transform: scale(1);
+    opacity: 0.8;
   }
   50% {
-    transform: translateY(-15px);
+    transform: scale(1.4);
+    opacity: 1;
   }
 }
 
