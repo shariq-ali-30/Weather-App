@@ -231,6 +231,7 @@ body {
 
     .weather-details .temp h1 {
         margin-top: -20px;
+        font-size: 38px;
     }
 
     .weather-details .temp #weatherIcon {
