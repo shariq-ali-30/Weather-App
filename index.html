@@ -21,12 +21,24 @@
             </form>
             <div class="error-message">City not found!</div>
  
-            <div class="loader">
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
+<div class="loading-content">
+  <div class="liquid"></div>
+  <div class="liquid"></div>
+  <div class="liquid"></div>
+  <div class="liquid"></div>
 </div>
+<svg class="svg">
+  <filter id="gooey">
+    <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+    <feColorMatrix
+      values="1 0 0 0 0
+        0 1 0 0 0
+        0 0 1 0 0
+        0 0 0 20 -10"
+    ></feColorMatrix>
+  </filter>
+</svg>
+
 
             <div class="weather-details">
                 <div class="temp">
