@@ -59,60 +59,43 @@ body {
 }
 
 .loader {
+  position: absolute;
+  top: 48%;
+  left: 160px;
+  width: 2rem;
+  height: 2rem;
   display: none;
-  position: relative;
-  width: 4rem;
-  height: 4rem;
-  margin: 100px auto;
-  animation: rotate 2s linear infinite;
 }
 
-.dot {
-  width: 0.9rem;
-  height: 0.9rem;
-  background: white;
+.loader .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  opacity: 0.9;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: pulse 1.2s ease-in-out infinite;
+  animation: orbit 1.2s linear infinite;
 }
 
-.dot:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(0deg) translateX(1.5rem);
+.loader .dot:nth-child(1) {
   animation-delay: 0s;
 }
-.dot:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(90deg) translateX(1.5rem);
+.loader .dot:nth-child(2) {
   animation-delay: 0.15s;
 }
-.dot:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(180deg) translateX(1.5rem);
+.loader .dot:nth-child(3) {
   animation-delay: 0.3s;
 }
-.dot:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(270deg) translateX(1.5rem);
+.loader .dot:nth-child(4) {
   animation-delay: 0.45s;
 }
 
-@keyframes rotate {
+@keyframes orbit {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateX(1rem) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.4);
-    opacity: 1;
+    transform: rotate(360deg) translateX(1rem) rotate(-360deg);
   }
 }
 
