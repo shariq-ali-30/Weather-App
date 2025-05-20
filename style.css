@@ -72,7 +72,7 @@ body {
 .loader .dot {
   width: 0.9rem;
   height: 0.9rem;
-  background-color: #3498db;
+  background-color: #fff;
   border-radius: 50%;
   animation: bounce 1s infinite ease-in-out;
 }
