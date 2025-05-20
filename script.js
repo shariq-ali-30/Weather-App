@@ -32,7 +32,7 @@ document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
     const iconMap = {
   "1-sunny": "clear_day.png",
-  "0-sunny": "clear_night.png",
+  "0-sunny": "clear_day.png",
   "1-clear": "clear_day.png",
   "0-clear": "clear_night.png",
   "1-partly cloudy": "partly_cloudy_day.png",
