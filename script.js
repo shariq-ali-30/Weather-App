@@ -82,6 +82,7 @@ weatherIcon.src = getWeatherIcon(data);
 description.innerText = data.current.condition.text;
 
 weatherDetails.style.display = "block";
+loader.style.display = 'none';
 
   } catch (error) {
     errorMessage.innerText = 'Unable to fetch data. Please check your internet connection.';
@@ -90,7 +91,6 @@ weatherDetails.style.display = "block";
     searchInput.focus();
     weatherDetails.style.display = 'none';
     loader.style.display = 'none';
-    console.error('Fetch error:', error);
   }
 }
 
