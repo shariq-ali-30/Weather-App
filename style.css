@@ -68,7 +68,7 @@ display: none;
 animation: spin 2s linear infinite, fadeIn 0.5s ease;
 }
 
-.loader .circle {
+.loader .dot {
 background: #fff;
 opacity: 0.9;
 width: 0.9rem;
@@ -77,22 +77,22 @@ border-radius: 50%;
 position: absolute;
 }
 
-.loader .circle:nth-child(1) {
+.loader .dot:nth-child(1) {
 top: 0;
 left: 0;
 }
 
-.loader .circle:nth-child(2) {
+.loader .dot:nth-child(2) {
 top: 0;
 right: 0;
 }
 
-.loader .circle:nth-child(3) {
+.loader .dot:nth-child(3) {
 bottom: 0;
 left: 0;
 }
 
-.loader .circle:nth-child(4) {
+.loader .dot:nth-child(4) {
 bottom: 0;
 right: 0;
 }
