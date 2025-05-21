@@ -81,6 +81,8 @@ function getWeatherIcon(data) {
 weatherIcon.src = getWeatherIcon(data);
 description.innerText = data.current.condition.text;
 
+weatherDetails.style.display = "block";
+
   } catch (error) {
     errorMessage.innerText = 'Unable to fetch data. Please check your internet connection.';
     errorMessage.style.display = 'block';
