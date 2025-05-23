@@ -81,8 +81,10 @@ function getWeatherIcon(data) {
 weatherIcon.src = getWeatherIcon(data);
 description.innerText = data.current.condition.text;
 
-weatherDetails.style.display = "block";
-loader.style.display = 'none';
+setTimeout(function() {
+    weatherDetails.style.display = "block";
+    loader.style.display = 'none';
+}, 800);
 
   } catch (error) {
     errorMessage.innerText = 'Unable to fetch data. Please check your internet connection.';
