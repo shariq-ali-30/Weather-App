@@ -84,7 +84,7 @@ description.innerText = data.current.condition.text;
 setTimeout(function() {
     weatherDetails.style.display = "block";
     loader.style.display = 'none';
-}, 800);
+}, 500);
 
   } catch (error) {
     errorMessage.innerText = 'Unable to fetch data. Please check your internet connection.';
