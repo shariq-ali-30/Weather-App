@@ -65,7 +65,7 @@ async function getWeather(cityName) {
       };
 
       const key = `${data.current.is_day}-${data.current.condition.text.trim().toLowerCase()}`;
-      return `icons/${iconMap[key]}` || `https:${data.current.condition.icon}`;
+      return iconMap[key] || `https:${data.current.condition.icon}`;
     }
 
     weatherIcon.src = getWeatherIcon();
