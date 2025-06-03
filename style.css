@@ -161,6 +161,14 @@ transform: scale(1) rotate(360deg);
     font-size: 28px;
 }
 
+.weather-details .temp p {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #f0f0f0;
+    opacity: 0.85;
+    letter-spacing: 0.5px;
+}
+
 .weather {
     display: flex;
     justify-content: space-evenly;
