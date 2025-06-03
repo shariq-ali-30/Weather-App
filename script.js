@@ -35,7 +35,7 @@ h = h % 12 || 12;
 
 function updateTime(h, minute, ampm) {
   const formattedTime = `${h}<span class="blink-colon">:</span>${minute} ${ampm}`;
-  document.querySelector('.temp p').innerHTML = formattedTime;
+  document.querySelector('.temp .time').innerHTML = formattedTime;
 }
 
 updateTime(h, minute, ampm);
@@ -52,7 +52,6 @@ setInterval(() => {
 
 document.querySelector('.temp h1').innerText = Math.round(data.current.temp_c) + '°C';
 document.querySelector('.temp h2').innerText = data.location.name + ', ' + data.location.country;
-
 document.querySelector('.humidity').innerText = data.current.humidity + '%';
 document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
