@@ -27,6 +27,7 @@ async function getWeather(cityName) {
 
     document.querySelector('.temp h1').innerText = Math.round(data.current.temp_c) + '°C';
 document.querySelector('.temp h2').innerText = data.location.name + ', ' + data.location.country;
+document.querySelector('.temp p').innerText = 
 document.querySelector('.humidity').innerText = data.current.humidity + '%';
 document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
