@@ -32,8 +32,41 @@ async function getWeather(cityName) {
     document.querySelector('.temp h2').innerText = `${data.location.name}, ${data.location.country}`;
     document.querySelector('.humidity').innerText = data.current.humidity + '%';
     document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
-    weatherIcon.src = "https:" + data.current.condition.icon;
     description.innerText = data.current.condition.text;
+
+    function getWeatherIcon(data) {
+  const iconMap = {
+    "1-sunny": "clear_day.png",
+    "0-sunny": "clear_night.png",
+    "1-clear": "clear_day.png",
+    "0-clear": "clear_night.png",
+    "1-overcast": "overcast.png",
+    "0-overcast": "overcast.png",
+    "1-partly cloudy": "partly_cloudy_day.png",
+    "0-partly cloudy": "partly_cloudy_night.png",
+    "1-cloudy": "cloudy_day.png",
+    "0-cloudy": "cloudy_night.png",
+    "1-mist": "mist.png",
+    "0-mist": "mist.png",
+    "1-fog": "fog.png",
+    "0-fog": "fog.png",
+    "1-patchy rain nearby": "patchy_rain_nearby_day.png",
+    "0-patchy rain nearby": "patchy_rain_nearby_night.png",
+    "1-light rain": "light_rain.png",
+    "0-light rain": "light_rain.png",
+    "1-snow": "snow_day.png",
+    "0-snow": "snow_night.png",
+    "1-snow_rain": "snow_rain_day.png",
+    "0-snow_rain": "snow_rain_night.png",
+    "1-thundery outbreaks possible": "thundery_outbreaks_possible_day.png",
+    "0-thundery outbreaks possible": "thundery_outbreaks_possible_night.png",
+    "1-thundery outbreaks in nearby": "thundery_outbreaks_possible_day.png",
+    "0-thundery outbreaks in nearby": "thundery_outbreaks_possible_night.png"
+  };
+
+  const key = `${data.current.is_day}-${normalizeConditionText(data.current.condition.text)}`;
+  return iconMap[key] || "icon.png";
+}
 
     errorMessage.style.display = 'none';
     searchInput.style.border = 'none';
