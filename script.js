@@ -33,11 +33,25 @@ let h = parseInt(hour);
 let ampm = h >= 12 ? 'PM' : 'AM';
 h = h % 12 || 12;
 
-const formattedTime = `${h}:${minute} ${ampm}`;
+function updateTime(h, minute, ampm) {
+  const formattedTime = `${h}<span class="blink-colon">:</span>${minute} ${ampm}`;
+  document.querySelector('.temp p').innerHTML = formattedTime;
+}
+
+updateTime(h, minute, ampm);
+
+setInterval(() => {
+  let now = new Date();
+  let currentH = now.getHours();
+  let currentM = now.getMinutes();
+  let currentAmpm = currentH >= 12 ? 'PM' : 'AM';
+  currentH = currentH % 12 || 12;
+  currentM = currentM < 10 ? '0' + currentM : currentM;
+  updateTime(currentH, currentM, currentAmpm);
+}, 60000);
 
 document.querySelector('.temp h1').innerText = Math.round(data.current.temp_c) + '°C';
 document.querySelector('.temp h2').innerText = data.location.name + ', ' + data.location.country;
-document.querySelector('.temp p').innerText = formattedTime;
 
 document.querySelector('.humidity').innerText = data.current.humidity + '%';
 document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
