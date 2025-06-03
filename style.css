@@ -168,6 +168,18 @@ transform: scale(1) rotate(360deg);
     opacity: 0.85;
     letter-spacing: 0.5px;
 }
+.blink-colon {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 
 .weather {
     display: flex;
