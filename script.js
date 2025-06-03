@@ -34,7 +34,7 @@ async function getWeather(cityName) {
     document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
     description.innerText = data.current.condition.text;
 
-    function getWeatherIcon(data) {
+    function getWeatherIcon() {
   const iconMap = {
     "1-sunny": "clear_day.png",
     "0-sunny": "clear_night.png",
@@ -67,6 +67,8 @@ async function getWeather(cityName) {
   const key = `${data.current.is_day}-${normalizeConditionText(data.current.condition.text)}`;
   return iconMap[key] || "icon.png";
 }
+
+weatherIcon.src = getWeatherIcon();
 
     errorMessage.style.display = 'none';
     searchInput.style.border = 'none';
