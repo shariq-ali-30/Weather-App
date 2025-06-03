@@ -25,9 +25,13 @@ async function getWeather(cityName) {
   return;
 }
 
-    document.querySelector('.temp h1').innerText = Math.round(data.current.temp_c) + '°C';
+    const localTime = data.location.localtime;
+const timeOnly = localTime.split(' ')[1];
+
+document.querySelector('.temp h1').innerText = Math.round(data.current.temp_c) + '°C';
 document.querySelector('.temp h2').innerText = data.location.name + ', ' + data.location.country;
-document.querySelector('.temp p').innerText = 
+document.querySelector('.temp p').innerText = timeOnly;
+
 document.querySelector('.humidity').innerText = data.current.humidity + '%';
 document.querySelector('.wind').innerText = data.current.wind_kph + ' km/h';
 
