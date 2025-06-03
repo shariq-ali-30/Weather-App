@@ -40,15 +40,14 @@ function updateTime(h, minute, ampm) {
 
 updateTime(h, minute, ampm);
 
-setInterval(() => {
-  let now = new Date();
-  let currentH = now.getHours();
-  let currentM = now.getMinutes();
-  let currentAmpm = currentH >= 12 ? 'PM' : 'AM';
-  currentH = currentH % 12 || 12;
-  currentM = currentM < 10 ? '0' + currentM : currentM;
-  updateTime(currentH, currentM, currentAmpm);
-}, 60000);
+function normalizeConditionText(text) {
+  return text.toLowerCase().replace(/[^\w\s]/gi, '').trim();
+}
+
+function getWeatherIcon(data) {
+  const key = `${data.current.is_day}-${normalizeConditionText(data.current.condition.text)}`;
+  return iconMap[key] || data.current.condition.icon;
+}
 
 document.querySelector('.temp h1').innerText = Math.round(data.current.temp_c) + '°C';
 document.querySelector('.temp h2').innerText = data.location.name + ', ' + data.location.country;
