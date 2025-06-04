@@ -248,6 +248,7 @@ transform: scale(1) rotate(360deg);
 
    .weather-details .temp .description {
         font-size: 18px;
+        margin-top: -30px;
 }
 
     .weather {
