@@ -243,7 +243,11 @@ transform: scale(1) rotate(360deg);
 
     .weather-details .temp #weatherIcon {
         margin-top: 0px;
-        width: 180px;
+        width: 160px;
+}
+
+   .weather-details .temp .description {
+        font-size: 18px;
 }
 
     .weather {
