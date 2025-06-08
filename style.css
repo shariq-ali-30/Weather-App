@@ -175,7 +175,7 @@ transform: scale(1) rotate(360deg);
     align-items: center;
     width: 100%;
     position: relative;
-    bottom: 50px;
+    bottom: 10px;
 }
 
 .col {
@@ -254,6 +254,7 @@ transform: scale(1) rotate(360deg);
     .weather {
         gap: 20px;
         margin-top: -20px;
+        position: none;
     }
 
     .col {
