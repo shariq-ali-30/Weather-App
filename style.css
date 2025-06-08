@@ -174,7 +174,8 @@ transform: scale(1) rotate(360deg);
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
+    position: relative;
+    bottom: 50px;
 }
 
 .col {
@@ -182,8 +183,6 @@ transform: scale(1) rotate(360deg);
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    bottom: 50px;
 }
 
 .col img {
