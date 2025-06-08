@@ -77,6 +77,7 @@ async function getWeather(cityName) {
       weatherDetails.style.display = "block";
       loader.style.display = 'none';
     }, 500);
+      searchInput.value = "";
 
   } catch (error) {
     errorMessage.innerText = error.message || 'Unable to fetch data.';
