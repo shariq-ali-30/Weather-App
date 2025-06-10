@@ -175,7 +175,7 @@ transform: scale(1) rotate(360deg);
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
 }
 
 .col {
