@@ -80,7 +80,7 @@ async function getWeather(cityName) {
       searchInput.value = "";
 
   } catch (error) {
-    errorMessage.innerText = 'Connection error. Try again.';
+    errorMessage.innerText = error.message || 'Connection error. Try again.';
     errorMessage.style.display = 'block';
     searchInput.style.border = '1.5px solid red';
     searchInput.focus();
