@@ -253,7 +253,7 @@ transform: scale(1) rotate(360deg);
 
     .weather {
         margin-top: 30px;
-        position: none;
+        position: static;
     }
 
     .col {
