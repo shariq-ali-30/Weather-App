@@ -234,6 +234,7 @@ transform: scale(1) rotate(360deg);
 
     .weather-details {
         margin: 0;
+        position: relative;
     }
 
     .weather-details .temp h1 {
@@ -252,6 +253,7 @@ transform: scale(1) rotate(360deg);
 }
 
     .weather {
+        position: absolute;
         bottom: 20px;
     }
 
