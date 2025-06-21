@@ -61,9 +61,7 @@ body {
 .loader {
 width: 2rem;
 height: 2rem;
-position: absolute;
-top: 48%;
-left: 44%;
+align-self: center;
 display: none;
 animation: spin 2s linear infinite, fadeIn 0.5s ease;
 }
