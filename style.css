@@ -63,7 +63,7 @@ width: 2rem;
 height: 2rem;
 position: absolute;
 top: 46%;
-left: 46%;
+left: 40%;
 transform: translate(-50%, -50%);
 display: none;
 animation: spin 2s linear infinite, fadeIn 0.5s ease;
