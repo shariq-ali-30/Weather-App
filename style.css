@@ -62,8 +62,8 @@ body {
 width: 2rem;
 height: 2rem;
 position: absolute;
-top: 46%;
-left: 40%;
+top: 48%;
+left: 44%;
 transform: translate(-50%, -50%);
 display: none;
 animation: spin 2s linear infinite, fadeIn 0.5s ease;
